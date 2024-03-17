@@ -1,0 +1,19 @@
+@import "colors.scss";
+.announcement{
+    display:flex;
+}
+.box1{
+     background-color: $first;
+     padding:0.5%;
+     color: $third;
+     display:flex;
+     width:10%;
+     justify-content: center;
+     
+}
+.box2{
+    background-color: #975dab;
+    flex: 1;
+    text-align: left;
+
+}
