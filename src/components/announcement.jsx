@@ -1,28 +1,41 @@
-import React from 'react'
+import React,{ useEffect, useState } from 'react'
+import {firestore} from './firebase';
+import {getDocs,collection} from '@firebase/firestore';
+function Announcement(){
+  let [Anns,setAnns]=useState([]);
+  const filteredAnns=Anns.filter(Ann=>Ann.id>Anns.length-3);
+  useEffect(() => {
+        const fetchData = async () => {
+            const ref = collection(firestore, 'Announcements');
+            try {
+                const querySnapshot = await getDocs(ref);
+                const newData = querySnapshot.docs.map(doc => doc.data()
+                );
+                const sortedData = newData.sort((a, b) => b.id - a.id);
+                setAnns(sortedData);
+                console.log(Anns);
+            } catch (error) {
+                console.error('Error fetching documents: ', error);
+            }
+        };
 
-function Announcement() {
+        fetchData();
+    }, []); // empty dependency array - run the effect only once on component mount, if necessary hooks will be added late
   
   return (
-    <div className="news-container">
-            <div className="title">
-                Announcement
-            </div>
-
-            <ul>
+    <div className='news-container'>
+     
+    <div className='title'>
+      Announcements
+    </div>
+     <ul>
+     {filteredAnns.map((ann, index) => (
                 <li>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!
+                    {ann.Title}
                 </li>
-                
-                <li>
-                    Lorem ipsum dolor sit
-                </li>
-
-                <li>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!
-                </li>
-            </ul>
-        </div>
-
+            ))}
+     </ul>
+    </div> 
   )
 }
 
