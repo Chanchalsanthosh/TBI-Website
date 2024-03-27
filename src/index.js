@@ -10,6 +10,8 @@ import Events from "./pages/events";
 import Startup from "./pages/startup";
 import Mentor from "./pages/mentor";
 import Incubate from "./pages/incubate";
+import Company from './components/company'; 
+import Announce from "./pages/Announce";
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
   {
     path:"incubate",
     element:<Incubate/>
+  },
+  {
+    path:"company",
+    element : <Company />
+  },
+  {
+    path:"announce",
+    element:<Announce/>
   }
  
 ]);
@@ -41,3 +51,4 @@ root.render(
   <RouterProvider router={router}/>
    
 );
+
