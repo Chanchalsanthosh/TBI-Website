@@ -1,0 +1,41 @@
+{
+    "Image":[
+        {
+            "id":"1",
+            "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Estro-e1668410324937.png",
+            "url":"https://www.google.com"
+
+        },
+        {
+            "id":"2",
+            "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Dezvault-e1668410364275.png",
+            "url":"https://www.google.com"
+
+        }, 
+        {
+            "id":"3",
+            "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Qnayds-e1668410590218.png",
+            "url":"https://www.google.com"
+
+        }, 
+        {
+            "id":"4",
+            "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Rove-e1668417136300.png",
+            "url":"https://www.amazon.com"
+
+        }, 
+        {
+            "id":"5",
+            "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/INFUSORY-DESIGNS-Logo.jpg",
+            "url":"https://www.google.com"
+
+        }, 
+        {
+            "id":"6",
+            "name":"https://gectcr.ac.in/wp-content/uploads/2016/12/Logo.jpg",
+            "url":"https://www.google.com"
+
+        }
+    ]
+} 
+          
