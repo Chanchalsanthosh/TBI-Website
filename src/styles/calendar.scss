@@ -1,0 +1,73 @@
+@import "colors.scss";
+#calendar{
+    width:50%;
+    height:auto;
+}
+.css-1hbyad5-MuiTypography-root{
+    display: none !important;
+    width: 50%;
+    margin-left: 10%;
+}
+.css-3jvy96-MuiTypography-root-MuiDatePickerToolbar-title{
+    align-items:  center !important;
+    justify-content: center !important;
+    width:40%;
+}
+.css-4pax7l-MuiPickersLayout-root{
+     display: block;
+     margin-left: 10%;
+}
+.css-knqc4i-MuiDialogActions-root{
+    display:none !important;
+}
+.css-1rtg91x-MuiDateCalendar-root{
+    display: block !important;
+    margin-left: 0%  !important     ;
+    width: 100% !important;
+    background-color: #2B2B3B;
+    color: $third;
+}
+.css-1aqny2q-MuiPickersCalendarHeader-root{
+    color: $third;
+}
+.css-16b5y55-MuiPickersLayout-contentWrapper{
+    margin-left: 0% !important;
+}
+.ss-9reuh9-MuiPickersArrowSwitcher-root{
+    color:$third !important;
+    background-color: $third !important;
+}
+.MuiPickersFadeTransitionGroup-root{
+
+}
+.css-15v8kdh-MuiPickersFadeTransitionGroup-root-MuiDateCalendar-viewTransitionContainer{
+    color:$third !important;
+}
+.css-14iq4xa-MuiDayCalendar-root{
+    color: $third !important;
+}
+.MuiDayCalendar-monthContainer{
+    color:white !important;
+}
+.css-i5q14k-MuiDayCalendar-header{
+    
+    text-decoration-color: white !important;
+}
+.css-1vooibu-MuiSvgIcon-root{
+    color: white ip !important;
+}
+.MuiDayCalendar-weekDayLabel{
+    color:white !important;
+}
+.MuiDayCalendar-weekContainer {
+    color: white !important;
+}
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root{
+    color: white !important;
+}
+.css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon{
+    color: white !important;
+}
+.css-1vooibu-MuiSvgIcon-root{
+    color: white !important;
+}

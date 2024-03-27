@@ -1,0 +1,33 @@
+@import "colors.scss";
+#company{
+    margin-top: 5%;
+    background-color: $fourth;
+}
+#company h3 {
+    color: $third;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+#company h1{
+    color: $second;
+    text-align: center;
+    margin-top: 0%;
+}
+.card{
+    width:250px;
+    height:200px;
+    margin-left: 5%;
+    display:inline-flex;
+    object-fit: cover;
+    left:1%;
+    right:1%;
+    border:2px  solid $first;
+   
+
+}
+.card img{
+    width:250px;
+  
+    display: inline-flex;
+}
