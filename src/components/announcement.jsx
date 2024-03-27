@@ -1,6 +1,7 @@
 import React,{ useEffect, useState } from 'react'
-import {firestore} from './firebase';
+import {firestore} from "./firebase"
 import {getDocs,collection} from '@firebase/firestore';
+import { Link } from "react-router-dom";
 function Announcement(){
   let [Anns,setAnns]=useState([]);
   const filteredAnns=Anns.filter(Ann=>Ann.id>Anns.length-3);
@@ -26,15 +27,16 @@ function Announcement(){
     <div className='news-container'>
      
     <div className='title'>
-      Announcements
+    <Link to ={"/announce"}> Announcements </Link>
     </div>
-     <ul>
+    <ul>
      {filteredAnns.map((ann, index) => (
                 <li>
                     {ann.Title}
+                    {ann.body}
                 </li>
             ))}
-     </ul>
+    </ul>
     </div> 
   )
 }
