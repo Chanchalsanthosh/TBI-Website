@@ -2,28 +2,34 @@ import React, { useRef } from "react";
 import {animate,motion} from "framer-motion";
 
 const About = () => {
-  const StartupsCount = useRef(null);
-  const CompanyCount = useRef(null);
-  const MentorCount = useRef(null);
+  const StartupsCount = useRef(1);
+  const CompanyCount = useRef(1);
+  const MentorCount = useRef(1);
 
-  const animationStartupsCount = () => {
-    animate(0, 20, {
-      duration: 2,
-      onUpdate: (v) => (StartupsCount.current.textContent = v.toFixed()),
-    });
-  };
+    const animationStartupsCount = () => {
+      if (StartupsCount.current) {
+        animate(0, 20, {
+          duration: 1,
+          onUpdate: (v) => (StartupsCount.current.textContent = v.toFixed()),
+        });
+      }
+    };
   const animationCompanyCount = () => {
+    if (CompanyCount.current) {
     animate(0, 10, {
-      duration: 2,
+      duration: 1,
       onUpdate: (v) => (CompanyCount.current.textContent = v.toFixed()),
     });
+   }
   };
   const animationMentorCount = () => {
+    if (CompanyCount.current) {
     animate(0, 15, {
-      duration: 2,
+      duration: 1,
       onUpdate: (v) => (MentorCount.current.textContent = v.toFixed()),
     });
-  };
+  }
+};
 
   const animations = {
     h1: {
@@ -59,21 +65,21 @@ const About = () => {
       <p>
         +<motion.span ref={StartupsCount} whileInView={animationStartupsCount}></motion.span>
       </p>
-      <span>Start Ups</span>
+      <span id="inside">Start Ups</span>
     </article>
    
     <article>
       <p>
         +<motion.span whileInView={animationCompanyCount} ref={CompanyCount}></motion.span>
       </p>
-      <span>Companies</span>
+      <span id="inside">Companies</span>
     </article>
   
     <article>
       <p>
         +<motion.span ref={MentorCount} whileInView={animationMentorCount}></motion.span>
       </p>
-      <span>Mentors</span>
+      <span id="inside">Mentors</span>
     </article>
 
     </div>
