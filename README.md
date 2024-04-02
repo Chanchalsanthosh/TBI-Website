@@ -15,4 +15,4 @@ the companies and mentors under TBI.
 #
 
 ## HOME PAGE
-# ![](Documents/Design-UI-Images/IMG-20240401-WA0005.jpg)
+# ![](Documents/Design-UI-Images/Desktop - 1.png)
