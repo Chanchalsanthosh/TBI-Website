@@ -15,4 +15,5 @@ the companies and mentors under TBI.
 #
 
 ## HOME PAGE
-# ![](Documents/Design-UI-Images/Desktop - 1.png)
+
+![](Documents/Design-UI-Images/Desktop.png)
