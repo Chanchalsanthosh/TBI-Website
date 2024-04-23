@@ -1,6 +1,7 @@
 @import "colors.scss";
 #footer{
     background: linear-gradient(to bottom, #5d0979 0%,#20122B 100%);
+   width:100%;
 }
 #footer .left{
     width:40%;
@@ -145,6 +146,8 @@
    margin-top:-7px;
    padding-left: 14px;
    margin-left: 36px;
+   font-size: 20px;
+   color: $third;
    background:transparent;
    border-radius: 5px;
    border: 2px solid rgb(237, 231, 231);
@@ -154,6 +157,8 @@
  }
  .r .news .my-input2{
   margin-top:23px;
+  font-size: 20px;
+  color:$third;
   padding-left: 14px;
   margin-left: 36px;
   background:transparent;
