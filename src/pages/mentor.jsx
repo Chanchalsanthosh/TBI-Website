@@ -9,9 +9,9 @@ const mentor = () => {
   
   return (
     
-    <div>
+    <div class id="mentors">
       <Header/>
-      <h1 className='heading'>Mentors</h1>
+      <h1 className='heading'>Our Mentors</h1>
       <div className='card1'>
       <FlippableCard/>
       </div>
