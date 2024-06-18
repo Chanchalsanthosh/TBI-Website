@@ -2,36 +2,55 @@
     "Image":[
         {
             "id":"1",
+            "cname":"Estro Tech Robotics and Innovations Pvt. Ltd",
+            "about":"Estro Tech Robotics is an up-and-coming future-ready tech company that works over robotics and innovative devices.",
+            "link":"www.estrotech.in",
             "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Estro-e1668410324937.png",
-            "url":"https://www.google.com"
+            "url":"http://www.estrotech.in",
+            "knowmore":"/company1"
 
         },
         {
             "id":"2",
+            "cname":"Dezvault",
+            "about":"Dezvault is an industrial design firm providing product development services to startups, inventors, and small manufacturers.",
+            "link":"",
             "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Dezvault-e1668410364275.png",
-            "url":"https://www.google.com"
+            "url":"http://www.dezvault.com"
 
         }, 
         {
             "id":"3",
+            "cname":"QNAYDS",
+            "about":"The real innovation is our really promising start-up with the sole aim of addressing relevant issues by incorporating technology and expertise. ",
+            "link":"",
             "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Qnayds-e1668410590218.png",
             "url":"https://www.google.com"
 
         }, 
         {
             "id":"4",
+            "cname":"Rove",
+            "about":"Rove is a complete IOT solution that consists of a Smart ticketing machine , servers and 2 separate apps for passengers and bus owners.",
+            "link":"",
             "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/Rove-e1668417136300.png",
             "url":"https://www.amazon.com"
 
         }, 
         {
             "id":"5",
+            "cname":"Infusory Designs",
+            "about":" introducing High-Tech workshops for all those geeks out there. The start up mainly focuses on organizing training sessions and events on the latest, most advanced and current trending technologies in the field of engineering.",
+            "link":"",
             "name":"http://gectcr.ac.in/wp-content/uploads/2016/12/INFUSORY-DESIGNS-Logo.jpg",
-            "url":"https://www.google.com"
+            "url":" http://www.infusorydesigns.com/"
 
         }, 
         {
             "id":"6",
+            "cname":"Do-NAMs Innovations",
+            "about":"Do-NAMs Innovations is a start up by 3 young Engineers having a combined experience of more than 25 years. Our effort will be to study the need in Education and Renewable energy domian to provide advanced technology based solutions to improve the quality of living of common man.",
+            "link":"",
             "name":"https://gectcr.ac.in/wp-content/uploads/2016/12/Logo.jpg",
             "url":"https://www.google.com"
 

@@ -1,0 +1,139 @@
+{
+    "ytvid":[
+    {
+        "id":"1",
+        "title":"vid1",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+        "embedId":"https://www.youtube.com/embed/-ai7H7lk5_s"    
+    },
+    
+    {
+        "id":"2",
+        "title":"vid2",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+        "embedId":"https://www.youtube.com/embed/CBYhVcO4WgI?list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1"   
+    },
+    {
+        "id":"3",
+        "title":"vid3",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+        "embedId":"https://www.youtube.com/embed/Uwk86DUPywI"
+    },
+    {
+        "id":"4",
+        "title":"vid4",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+        "embedId":"https://www.youtube.com/embed/H9ygAJ3dcqE"
+    },
+
+        {
+            "id":"5",
+            "title":"vid5",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/-ai7H7lk5_s"           
+        },
+        {
+            "id":"6",
+            "title":"vid6",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/CBYhVcO4WgI?list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1"   
+        },
+        {
+            "id":"7",
+            "title":"vid7",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/Uwk86DUPywI"
+        },
+        {
+            "id":"8",
+            "title":"vid8",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/H9ygAJ3dcqE"
+        },
+        {
+            "id":"9",
+            "title":"vid9",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/CBYhVcO4WgI?list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1"   
+        },
+        {
+            "id":"10",
+            "title":"vid10",
+            "desc":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. ",
+            "embedId":"https://www.youtube.com/embed/Uwk86DUPywI"
+        }
+    ],
+
+    "funding":[
+        {
+            "id":"1",
+            "title":"Startup India Funding",
+            "link":"https://www.startupindia.gov.in/content/sih/en/reources/looking_for_funding.html",
+            "description":"Funding refers to the money required to start and run a business. It is a financial investment in a company for product development, manufacturing, expansion, sales and marketing, office spaces, and inventory."
+        },
+
+        { 
+            "id":"2",
+            "title":"India Science, Technology and Innovation portal",
+            "link":"https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"3",
+            "title":"UNICEF",
+            "link":"https://www.unicef.org/innovation/apply-AI-ML-digitalservices",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"4",
+            "title":"Startup Telangana",
+            "link":"https://startup.telangana.gov.in/grants/",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"5",
+            "title":"Startup India Seed Fund Scheme",
+            "link":"https://services.india.gov.in/service/detail/apply-for-financial-assistance-startup-india-seed-fund-scheme-1",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+        {
+            "id":"6",
+            "title":"Startup India Funding",
+            "link":"https://www.startupindia.gov.in/content/sih/en/reources/looking_for_funding.html",
+            "description":"Funding refers to the money required to start and run a business. It is a financial investment in a company for product development, manufacturing, expansion, sales and marketing, office spaces, and inventory."
+        },
+
+        { 
+            "id":"7",
+            "title":"India Science, Technology and Innovation portal",
+            "link":"https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"8",
+            "title":"UNICEF",
+            "link":"https://www.unicef.org/innovation/apply-AI-ML-digitalservices",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"9",
+            "title":"Startup Telangana",
+            "link":"https://startup.telangana.gov.in/grants/",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        },
+
+        { 
+            "id":"10",
+            "title":"Startup India Seed Fund Scheme",
+            "link":"https://services.india.gov.in/service/detail/apply-for-financial-assistance-startup-india-seed-fund-scheme-1",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. "
+        }
+
+       
+    ]
+}
