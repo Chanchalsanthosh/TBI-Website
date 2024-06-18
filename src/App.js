@@ -1,20 +1,25 @@
 import React from 'react'
-import Header from "./components/header";
+import Header from "./components/header2";
 import Home from "./components/home";
-import About from "./components/about";
-import Announcement from "./components/announcement";
-import Company from "./components/company";
-import Blog from "./components/blog";
+import About from "./components/About";
+import Announcement from "./components/Announcement";
+import Company from "./components/company12";
+import Gallery from "./components/Gallery2";
+import Blog from "./components/blog2";
 import Features from "./components/features";
 import Footer from "./components/Footer";
-import "./styles/header.scss";
+import "./styles/header2.scss";
 import "./styles/home.scss";
-import "./styles/about.scss";
 import "./styles/announcement.scss";
+import "./styles/about.scss";
 import "./styles/company.scss";
+import "./styles/gallery.scss";
 import "./styles/blog.scss";
 import "./styles/features.scss";
 import "./styles/footer.scss";
+import "./styles/event.scss";
+
+
 const App = () => {
   return (
     <div>
@@ -22,10 +27,12 @@ const App = () => {
       <Home/>
       <Announcement/>
       <About/>
-     <Features/>
+      <Features/>
       <Company/>
+      <Gallery/>
       <Blog/>
       <Footer/>
+     
       
     </div>
   )
