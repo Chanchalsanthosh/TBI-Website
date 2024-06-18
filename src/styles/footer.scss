@@ -1,17 +1,18 @@
 @import "colors.scss";
 #footer{
-    background: linear-gradient(to bottom, #5d0979 0%,#20122B 100%);
+    background: #621675;
    width:100%;
 }
 #footer .left{
     width:40%;
-  float:left;
+    float:left;
 }
 #footer .left h1{
     color: $third;
-    margin-left:51px ;
+    margin-left:-333px ;
     margin-top:68px;
     font-size: 35px;
+    
 }
 #footer .left .phone{
     font-size: 24px;
@@ -50,6 +51,9 @@
     font-family: emoji;
   
 } 
+#footer .left .icons{
+  margin-top: -23px;
+}
 #footer .left .link{
   font-size: 30px;
   margin-left: 53px;
@@ -76,6 +80,7 @@
   height: auto;
   margin-left: 23px;
   margin-top: 19px;
+  border-radius: 5%;
   
   
 } 
@@ -109,7 +114,7 @@
   width:20%;
   
  }
- .r .news{
+ #footer .r .news{
   width: 500px;
   height: 400px;
   background-color:#621675;
@@ -117,14 +122,14 @@
   margin-left:96px;
  }
  
- .r .news h2{
+ #footer  .r .news h2{
    //padding:36px;
    margin-top: 20px;
    color:#EEBD3B;
    font-size: 32px;
    margin-left: 34px;
  }
- .r  .news .ptag{
+ #footer .right .r  .news .ptag{
    margin-top:-20px;
    padding-left: 36px;
    color:#EEBD3B;
@@ -133,7 +138,7 @@
   
  }
  
- .r .news .ptag1{
+ #footer .r .news .ptag1{
    margin-top:-14px;
    padding-left: 36px;
    color:white;
@@ -142,7 +147,7 @@
   
    
  }
- .r .news .my-input{
+ #footer  .r .news .my-input{
    margin-top:-7px;
    padding-left: 14px;
    margin-left: 36px;
@@ -155,7 +160,7 @@
    height:40px;
 
  }
- .r .news .my-input2{
+ #footer .r .news .my-input2{
   margin-top:23px;
   font-size: 20px;
   color:$third;
@@ -168,7 +173,7 @@
   height:40px;
 
 }
- .r .news .btn{
+#footer .right .r .news .btn{
    margin-top:34px;
    padding-left: 6px;
    margin-left: 36px;
@@ -183,19 +188,402 @@
    color: #20122B;
  }
  
- .r ul {
+ #footer .r ul {
    display: flex;
    padding: 0;
    margin: 0;
  }
  
-.r ul li {
-   display: flexbox;
+ #footer .r ul li {
+  
    margin-right: 27px;
    margin-top: 97px;
    white-space: nowrap;
    font-size: 25px;
    color: white;
+}
+
+ 
+
+ @media only screen and (max-width: 1024px) {
+  #footer{
+    display:flex;
+    flex-direction: column;
+  }
+  #footer .left {
+    width: 100%; /* Make left section full width */
+    float: none;
+    text-align: center; /* Remove float */
+  }
+
+  #footer .left h1,
+  h3 {
+    font-size: 45px; /* Adjust font size for headings */
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 50px;
+    
+ 
+  }
+  #footer .left .image2 {
+      width: 28px;
+      margin-left: 18px; /* Adjust width of image for width 768px */
+    }
+    
+  #footer .left .phone
+    {
+        font-size: 25px; 
+        margin-left: -128px;
+        margin-top: -13px;
+  
+   }
+   #footer .left .num{
+    margin-top: -25px;
+    margin-left: 39px;
+    font-size: 20px;
+   }
+  
+   #footer .left .email{
+      
+      font-size: 25px; 
+      margin-left: -126px;
+      margin-top: 10px;
+   }
+   #footer .left .em{
+    margin-top: -30px;
+    margin-left: 83px;
+    font-size: 22px;
+    color: white;
+  }
+
+  #footer .left .image{
+    width:5%; 
+    height: auto;
+    margin-left: 58px;
+   margin-bottom: -5px;
+    border-radius: 5%;
+  }
+
+  #footer .left h3{
+    margin-top: -26px;
+    margin-left: 45px;
+  }
+  
+  #footer .left .icons{
+    margin-top: -30px;
+    margin-left: 34px;
+  }
    
+ #footer .left .image1{
+     
+      margin-left: 151px;
+      margin-top: 60px;
+    }
+
+
+  
+  #footer .right {
+    width: 100%; 
+    margin-top: 0%; 
+    margin-left: 0%;
+  }
+
+  #footer .right .l{
+    display:none;
+    width:0%;
+  } 
+  
+ #footer .right .r{
+  width: 100%;
+  margin-left: 0%;
+}
+
+#footer .right .r .news {
+  width: 100%;
+  height: 380px;
+  margin-left: 0%;
+  margin-top: -7px;
+}
+  
+ 
+  #footer .right .r .news .my-input2
+  {
+    width: 60%; 
+    height:34px;
+    margin-left:21%;
+    margin-top:3%;
    
- }
+  }
+ 
+  #footer  .right .r .news .my-input{
+      width: 60%;
+      height:34px; 
+      margin-left: 21%;
+      margin-top:3%;
+  }
+ 
+  #footer .right .r .news .btn{
+      width: 63%;
+      height:39px; /* Adjust width for padding */
+      margin-left: 21%; /* Add margin for better spacing */
+      margin-top: 3%; 
+  }
+
+  
+ 
+  #footer .r .news h2{
+    padding-top: 3%;
+    font-size: 26px; /* Adjust font size for p tags */
+    text-align: center;
+   /* Add padding for better spacing */
+  }
+
+  #footer .right .r .news .ptag{
+     font-size: 26px ;
+     text-align: center;
+     
+  }
+
+  #footer .r .news
+  .ptag1{
+      font-size: 19px; /* Adjust font size for p tags */
+      text-align: center;
+  }
+
+  #footer .right .r ul{
+      align-items: center;
+      margin-left:23%;
+      font-size: 23px;
+
+  }
+
+    
+}
+@media only screen and (min-width: 300px)and (max-width: 344px)
+{
+  #footer .right .r ul{
+    margin-left:7%;
+    
+}
+ 
+  #footer .right .r ul li{
+    font-size: 15px;
+    margin-top:50px;
+   
+  }
+  #footer .left .image1{
+    margin-left: -489px;
+  }
+
+  #footer .right .r .news .my-input,
+  #footer .right .r .news .my-input2{
+    font-size: 17px;
+  }
+
+}
+@media only screen and (min-width: 344px)and (max-width: 416px)
+{
+  #footer .right .r ul{
+    margin-left:16%;
+    
+}
+ 
+  #footer .right .r ul li{
+    font-size: 15px;
+    margin-top:50px;
+  }
+}
+#footer .right .r .news .my-input,
+  #footer .right .r .news .my-input2{
+    font-size: 18px;
+  }  
+
+
+@media only screen and (min-width: 417px)and (max-width: 500px)
+{
+  #footer .right .r ul{
+    margin-left:16%;
+    
+}
+ 
+  #footer .right .r ul li{
+    font-size: 17px;
+    margin-top:50px;
+  }
+   
+}  
+
+
+@media only screen and (min-width: 501px)and (max-width: 670px)
+{
+  
+  #footer .right .r ul{
+    margin-left:18%;
+    
+}
+ 
+  #footer .right .r ul li{
+    font-size: 20px;
+    margin-top:70px;
+  }
+}  
+
+@media only screen and (min-width: 200px)and (max-width: 566px) {
+  #footer .left .image1{
+   width: fit-content;
+   margin-left: 120px;
+  }
+}
+ 
+
+@media only screen and (min-width: 628px)and (max-width: 680px){
+  #footer .left .image{
+    width:6%;
+   
+  }
+}
+
+
+@media only screen and (min-width:548px)and (max-width: 628px){
+  #footer .left .image{
+    width:7%;
+   
+  }
+}
+
+
+@media only screen and (min-width:445px)and (max-width: 548px){
+  #footer .left .image{
+    width:8%;
+    height:auto;
+    margin-left: 50px;
+  }
+}
+
+
+@media only screen and (min-width:392px) and (max-width: 445px){
+  #footer .left .image{
+    width:9%;
+   
+  }
+}
+
+@media only screen and  (max-width: 392px){
+  #footer .left .image{
+    width:10%;
+    margin-left: 40px;
+
+}
+}
+
+
+@media only screen and (min-width:850px) and (max-width: 1024px){
+  #footer .left .image{
+    margin-left: 25px;
+  }
+  #footer .left .image1{
+    
+    margin-left: 80px;
+   }
+  
+}
+
+
+
+@media only screen and (min-width:1025px) and (max-width: 1399px){
+  #footer{
+    display: flex;
+    background:#621675;
+  }
+  #footer .left{
+    width:40%;
+   
+  }
+  #footer .right {
+    width:60%;
+   margin-left: 0px;
+   margin-top: 0px;
+   
+  }
+  #footer .right .l{
+    width:40%;
+    height:auto;
+  }
+  #footer .right .l .image2{
+    width: 100%;
+    margin-left: -44px;
+    height: 290px;
+    margin-top: 81px;
+  }
+  #footer .right .r{
+    width:60%;
+     
+    
+   
+  }
+  #footer .right .news{
+    width:100%;
+    margin-left: -28px;
+    height:270px;
+    margin-top: 90px;
+  }
+  #footer .right .r .news h2,
+  #footer .right .r .news .ptag{
+   font-size: 32px;
+   margin-top: -21px;
+  }
+  #footer .right .r .news .ptag1{
+    font-size: 19px;
+    margin-top: -21px;
+   }
+
+   #footer .right .r .news .my-input,
+   #footer .right .r .news .my-input2{
+     width: 85%;
+     height: 33px;
+    }
+    
+    #footer .right .r .news .btn {
+      width: 90%;
+      height: 35px;
+     }
+   #footer .right .r .news .my-input{
+    margin-top: 3px;
+   }
+   #footer .right .r .news .my-input2{
+    margin-top: 18px;
+   }
+   #footer .right .r .news .btn{
+    margin-top: 17px;
+    margin-left:37px;
+   }
+   #footer .left h1{
+    font-size: 30px;
+    margin-left: -38%;
+   }
+   #footer .left .image{
+    width:8%;
+    
+   }
+   #footer .left .image1{
+    width: 40%;
+    height: 21%;
+   }
+   #footer .right .r ul {
+    margin-left: -50%;
+    margin-top: 12%;
+
+   }
+   
+  }
+
+  @media only screen and (min-width:1110) and (max-width:1129){
+    #footer .left h1{
+      margin-left: -39%;
+    }
+  }
+  @media only screen and (min-width:1129) and (max-width:1500){
+    #footer .left h1{
+      margin-left: -60%;
+    }
+  }

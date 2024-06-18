@@ -1,0 +1,97 @@
+@import "colors.scss";
+#event{
+    width:100%;
+    height:100vh;
+    .bgvideo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+       >video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+       }
+    }
+   
+    
+        >h1{
+            color:$first;
+            margin-left: 2%;
+        }
+    
+    .bottom1{
+      display:flex;
+      width:100%;
+      margin-top: 5%;
+      height:auto;
+    }
+    .top{
+        width:100%;
+        margin-top: 10%;
+    }
+}
+      
+@media (max-width: 1482px){
+    #event{
+        .bottom1{
+            display:grid;
+            width:100%;
+        }
+       
+    }
+    
+}
+@media (max-width: 340px){
+    #event{
+        width:100%;
+    }
+}
+
+
+
+
+
+         /* .upcoming{
+           .slider-container{
+            width:90%;
+            margin-left: 2%;
+            margin-top: 3%;
+            padding:2%;
+            margin-right: 3%;
+         
+            border-radius: 30px;
+            .own_card{
+                background-color: $third;
+                border: 2px solid black;
+                width:85%;
+                margin-top:1%;
+                padding:1%;
+                height: 400px;
+                justify-content: space-evenly;
+                height: 100px;
+            
+
+                .ccontent{
+                    margin-left: 10%;
+                    height: 20px;
+
+                }
+            }
+           }
+
+            >h2{
+                color:$first;
+            }
+        }
+      }*/
+
+    

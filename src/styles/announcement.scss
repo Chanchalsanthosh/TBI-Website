@@ -4,6 +4,7 @@
     font-family: "Roboto", sans-serif;
     box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
     background: #ebcff6;
+    overflow-x: hidden;
   }
   
   .news-container .title {
@@ -16,6 +17,14 @@
     color: white;
     font-weight: bold;
     z-index: 200;
+  
+
+    a{
+      color:white;
+      font-size: 20px;
+      text-decoration: none;
+      
+    }
   }
   
   .news-container ul {

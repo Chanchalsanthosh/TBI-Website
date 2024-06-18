@@ -1,0 +1,46 @@
+@import "colors.scss";
+#ExtendedAnnouncements{
+    display:block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .ViewAnnouncement{
+        display: flex;
+        padding:1%;
+        border-style: double;
+        width:80%;
+        height: 30%;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        .img{
+            width: 50px;  
+            height: 50px;
+            margin-right: 25px;
+            float: left;
+                
+            }
+            .title{
+                color: $fourth;
+                display: inline;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-color: $fourth;
+                
+            }
+            .body{
+                margin-left: 80px;
+                background-color:$third;
+                color: $second;
+                font-weight: 1000;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        .link{
+                margin-left: 80px;
+                display: flex;
+                margin-bottom: 1%;
+        
+            }
+            
+    }
+}
+
+    

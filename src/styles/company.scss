@@ -1,33 +1,98 @@
 @import "colors.scss";
-#company{
-    margin-top: 5%;
-    background-color: $fourth;
-}
-#company h3 {
+
+#company {
+  margin-top: 5%;
+  background-color: $fourth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  h3 {
     color: $third;
     text-align: center;
     font-size: 20px;
     margin-bottom: 0%;
-}
-#company h1{
+  }
+
+  h1 {
     color: $second;
     text-align: center;
     margin-top: 0%;
-}
-.card{
-    width:250px;
-    height:200px;
-    margin-left: 5%;
-    display:inline-flex;
-    object-fit: cover;
-    left:1%;
-    right:1%;
-    border:2px  solid $first;
-   
+  }
 
-}
-.card img{
-    width:250px;
-  
-    display: inline-flex;
+  .slider-container {
+    width: 90%;
+    margin-left: 5%; // Adjusted for responsiveness
+    margin-top: 3%;
+    padding: 2%;
+    margin-right: 3%;
+    border-radius: 30px;
+
+    .own_card {
+      background-color: $third;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%; // Adjusted for responsiveness
+      margin-top: 1%;
+      padding: 1%;
+      height: max-content;
+      justify-content: space-evenly;
+
+      .left {
+        margin-bottom: 1%;
+        margin-right: 2%; // Adjusted for responsiveness
+        padding: 0%;
+        width: 30%;
+        margin-left: 2%;
+        max-width: 200px; // Added max-width for responsiveness
+        align-self: flex-start; // Align image to the top
+      }
+
+      .left img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 5%; // Ensure image maintains aspect ratio
+      }
+
+      .ccontent {
+        margin-top: 0%;
+        width: 65%; // Adjusted for responsiveness
+        padding-left: 2%;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 17px;
+          margin-bottom: 2%;
+          margin-top: -1%;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 20px;
+
+          button {
+            margin-left: 3%;
+            width: 100px;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 30px;
+            border: 2px solid $first;
+            background-color: $first;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $second;
+              color: $fourth;
+            }
+          }
+        }
+      }
+    }
+  }
 }

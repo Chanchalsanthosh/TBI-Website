@@ -1,0 +1,89 @@
+@import "colors.scss";
+#incubate{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+   // background:linear-gradient(to bottom, #5d0979 0%,#20122B 100%);
+   background-color: $third;
+
+
+}
+#incubate .process{
+    width:100%;
+    height:50%;
+    display:block;
+    background-color: $fourth;
+    margin-top: 0%;
+}
+#incubate .process h2{
+    margin-top: 0%;
+    font-size: 30px;
+    color:$third;
+    margin-left: 5%;
+    background-color: $fourth;
+}
+#incubate .process img{
+    width:90%;
+    padding:1%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+   
+} 
+
+#incubate .bottom {
+    display:flex;
+    width:100%;
+    
+       .left{
+        width:45%;
+        margin-bottom: 0%;
+        background-image: url("../assests/incubation.webp");
+        
+        .caption{
+            display: block;
+            text-align: right;
+            margin-top: 10%;
+            >h1{
+                font-size: 35px;
+                color: $first;
+            }
+            >h2{
+                font-size: 25px;
+                margin-right: 10%;
+                margin-top: 2%;
+            }
+        }
+
+
+       }
+       .right{
+        width:50%;
+        margin-left: 3%;
+         .login{
+            width:95%;
+        }
+       }
+
+}
+@media only screen and (max-width: 650px){
+    #incubate .bottom {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        .left{
+            width:100%;
+        }
+        .right{
+            width:100%;
+        }
+    }
+    
+}
+@media only screen and (max-width: 845px){
+    #incubate .process img{
+        width:90%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+       
+    } 
+}

@@ -1,7 +1,7 @@
 @import "colors.scss";
 nav{
     width: 100%;
-    padding:10px;
+    padding:8px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +29,7 @@ main{
     right:10%;
     top:0%;
     
+    
     a{
         color:$third;
         margin:1rem;
@@ -39,12 +40,14 @@ main{
     button{
         background-color: $second;
         padding:10px;
-        border-radius: 20px;
+        border-radius: 30px;
+    
         margin-left: 10px;
         color:$first;
         font-weight: bold;
         font-size: larger;
         cursor: pointer;
+        
 
     }
 }

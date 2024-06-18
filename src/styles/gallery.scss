@@ -1,0 +1,58 @@
+@import "colors.scss";
+#gallery{
+    width:100%;
+    margin-top: 3%;
+    height:auto;
+    
+    h1 {
+        font: 700 2.5rem $third;
+        width: fit-content;
+        border-bottom: 1px solid $third;
+        padding: 0.5rem;
+        margin: auto;
+        color: $first;
+        margin-bottom: 0%;
+
+      }
+    h3{
+        font-size: 30px;
+        text-align: center;
+        margin-top: -1%;
+        margin-bottom: 0%;
+        
+    }
+      > section {
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: $third;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        > article {
+          width: 85%;
+         // height: 30vmax;
+          background-color: $second;
+        }
+}
+}
+#gallery .workItem {
+    overflow-y: auto;
+    height: 30vmax;
+    width: 85%;
+    margin: 5%;
+    background-color: $second;
+    display: flex;
+    padding: 2rem;
+   
+
+    img {
+      border-radius: 20px;
+      width:100%;
+      position: inherit;
+      left:18%;
+      
+    }
+   
+  }

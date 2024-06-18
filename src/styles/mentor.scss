@@ -1,40 +1,40 @@
-.heading{
-    display:block;
-    font-size: 50px;
-    padding-inline: 2%;
-    width:10%;
-    margin-left: 5%;
-    color: darkmagenta;
+#mentors .heading{
+   display:flex;
+   font-size: 50px;
+   padding-inline: 2%;
+   width:100%;
+   margin-left: 5%;
+   color: darkmagenta;
 
 }
-.card1{
-   display:flex;
-   padding: 0.5%;
-   margin-left: 15%;
-   margin-top: 5%;
-   float: left;
+#mentors .card1{
+  display:flex;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  float: left;
 }
-.card2{
+#mentors .card2{
+  display: grid;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  float: left;
+}
+#mentors .card3{
    display: grid;
-   padding: 0.5%;
-   margin-left: 15%;
-   margin-top: 5%;
-   float: left;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  float: left;
+  padding-bottom: 15%;
+
 }
-.card3{
-    display: grid;
-   padding: 0.5%;
-   margin-left: 15%;
-   margin-top: 5%;
-   float: left;
-   padding-bottom: 15%;
- 
-}
-.card4{
-    display: grid;
-   padding: 0.5%;
-   margin-left: 15%;
-   margin-top: 5%;
-   float: left;
-   padding-bottom: 15%;
+#mentors .card4{
+   display: grid;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  float: left;
+  padding-bottom: 15%;
 }

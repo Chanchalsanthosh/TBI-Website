@@ -1,22 +1,32 @@
 @import "colors.scss";
-#calendar{
+#cal_event{
+    width:100%;
+    display:flex;
+
+}
+.calendar{
     width:50%;
     height:auto;
+  
+   
 }
 .css-1hbyad5-MuiTypography-root{
     display: none !important;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 8%;
+    
 }
 .css-3jvy96-MuiTypography-root-MuiDatePickerToolbar-title{
     align-items:  center !important;
     justify-content: center !important;
     width:40%;
+    
+    
 }
 .css-4pax7l-MuiPickersLayout-root{
      display: block;
      margin-left: 10%;
-}
+} 
 .css-knqc4i-MuiDialogActions-root{
     display:none !important;
 }
@@ -29,6 +39,8 @@
 }
 .css-1aqny2q-MuiPickersCalendarHeader-root{
     color: $third;
+    
+    
 }
 .css-16b5y55-MuiPickersLayout-contentWrapper{
     margin-left: 0% !important;
@@ -37,6 +49,7 @@
     color:$third !important;
     background-color: $third !important;
 }
+
 .css-15v8kdh-MuiPickersFadeTransitionGroup-root-MuiDateCalendar-viewTransitionContainer{
     color:$third !important;
 }
@@ -48,7 +61,7 @@
 }
 .css-i5q14k-MuiDayCalendar-header{
     
-    text-decoration-color: white !important;
+    text-decoration-color: rgb(255, 255, 255) !important;
 }
 .css-1vooibu-MuiSvgIcon-root{
     color: white ip !important;
@@ -68,3 +81,179 @@
 .css-1vooibu-MuiSvgIcon-root{
     color: white !important;
 }
+
+.MuiBadge-root .MuiBadge-badge {
+    background-color: red; /* Change to a visible color */
+    color: white;
+    top: 50%; /* Ensure it's positioned correctly */
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  
+
+#cal_event .event-list{
+    
+    //border:2px solid black;
+    margin-left: 2%;
+    width: 45%;
+   // margin-top: 5%;
+    height:auto;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin-bottom: 0%;
+    background-color: $third;
+    .noevents{
+        
+        text-align: center;
+        >p{
+            font-size: 30px;
+
+        }
+    }
+    >h1{
+        margin-top:1%;
+        
+    }
+    >p{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .ViewEvent{
+        width:95%;
+        margin-left: 3%;
+       display:flex;
+      flex-direction: column;
+    
+        >img{
+            width:100%;
+            height:210px;
+            margin-top: 1%;
+        }
+        >h1{
+            font-size: 20px;
+        }
+        .under{
+            display: inline-flex;
+            justify-content: space-around;
+        
+            margin-left:0%;
+           align-self: flex-start;
+            width:50%;
+            .venue{
+                font-size: 20px;
+                margin-top: 2%;
+            }
+            >h5{
+                font-size: 15px;
+                margin-top: 1%;
+               
+                
+                
+            }
+            >p{
+                font-size: 15px;
+                margin-top: 1%;
+                margin-left: -5%;
+            }
+        }
+        .underS{
+            display: inline-flex;
+            justify-content: space-around; 
+            margin-left:2%;
+            align-self: flex-start;
+            width:50%;
+
+            .dt{
+                font-size: 20px;
+                margin-top: 2%;  
+            }  
+            >h5{
+                font-size: 15px;
+                margin-top: 1%;
+                margin-left: -2%;
+                
+            }
+            >p{
+                font-size: 15px;
+                margin-top: 1%;
+                margin-left: -5%;
+            }
+            
+        }
+    }
+
+
+
+}   
+
+@media (max-width: 1300px){
+   #cal_event{
+    display: 100%;
+    display: flex;
+    flex-direction: column;
+    .event-list{
+        .ViewEvent{
+            .under{
+                >h5{
+                    gap:2%;
+                    padding-right: 5%;
+                    padding-left: 5%;
+                    
+                }
+                >p{
+                    gap:2%;
+                    
+                }
+            }
+        }
+    }
+   }
+}
+@media (max-width: 850px){
+    #cal_event{
+     width: 100%;
+     display:block;
+    .calendar{
+        width:90%;
+     }
+     
+    .event-list{
+        width:90%;
+         .ViewEvent{
+            
+            
+            padding-left: 2%;
+             .under{
+                 >h5{
+                     gap:2%;
+                     padding-right: 5%;
+                     padding-left: 5%;
+                     
+                 }
+                 >p{
+                     gap:2%;
+                     
+                 }
+             }
+         }
+     }
+    }
+}
+@media (max-width: 340px){
+    #cal_event{
+        display: 100%;
+        display: flex;
+        flex-direction: column;
+}
+#cal_event .calendar{
+    width: 60%;
+    margin-right:5%;
+}
+}
+ 
+ 
+ 
+   
+ 
+
+  

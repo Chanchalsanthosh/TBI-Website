@@ -1,0 +1,107 @@
+@import "colors.scss";
+
+.templateContainer{
+    margin: 3% 0;
+    justify-content: center;
+    scrollbar-color: red;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+.templateContainer > .searchInput_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.templateContainer > .searchInput_Container input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.templateContainer .template_Container{
+    display: flex block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+.templateContainer .template_Container .template{
+    display: inline-block;
+    padding:2rem;
+    border-radius: 10px;
+    margin: 30px;
+    align-content: center;
+    background-color:$first;
+    color:aliceblue
+   
+   
+}
+.templateContainer .template_Container .template img{
+    width:300px;
+        height: 250px;
+        display: block;
+        padding: 2px;
+        border-radius: 10px;
+        justify-content: center;
+        
+}
+.templateContainer .template_Container .template h3 h4{
+    justify-items: center;
+    padding:2px;
+    align-content: center;
+
+}
+.templateContainer .template_Container .template .under{
+        display:flex;
+       gap:2%;
+    
+        margin-left:1%;
+        //align-self: flex-start;
+        width:95%;
+        .venue{
+            font-size: 20px;
+            margin-top: 2%;
+            padding-left:2%;
+        }
+        >h5{
+            font-size: 15px;
+            margin-top: 1%;
+           // margin-left: -5%;
+            justify-content: space-around;
+            
+        }
+        >p{
+            font-size: 15px;
+            margin-top: 1%;
+           // margin-left: 10%;
+        }
+    }
+    .templateContainer .template_Container .template .underS{
+        display:flex;
+        gap:2%;
+        margin-left:1%;
+        margin-bottom: 0%;
+       // align-self: flex-start;
+        width:95%;
+
+        .dt{
+            font-size: 20px;
+            margin-top: 2%;  
+            margin-right: 2%;
+        }  
+        >h5{
+            font-size: 15px;
+            margin-top: 1%;
+            //margin-left: -2%;
+            
+        }
+        >p{
+            font-size: 15px;
+            margin-top: 1%;
+           // margin-left: -5%;
+        }
+
+    }
