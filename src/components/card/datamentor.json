@@ -1,0 +1,44 @@
+{
+    "mentors":[
+        {
+            "id":1,
+            "name":"Dr.Ajay James",
+            "designation":"HOD, CSE Department",
+            "spl":"Data Science, AI, Machine Learning",
+            "desc":"Specialised in Neural Networks and NLP,Published works on Malayalam Handwritten character recognition using CNN,  Worked on Hidden encryption of text files",
+            "email":"http://www.email.com",
+            "linkedin": "https://www.linkedin.com",
+            "photo":"person.jpg"
+        },
+        {
+            "id":2,
+            "name":"Dr.ABC",
+            "designation":"CSE Department",
+            "spl":"DBMS, Data Structures",
+            "desc":"Specialised in XYZ",
+            "email":"http://www.email.com",
+            "linkedin": "https://www.linkedin.com",
+            "photo":"person.jpg"
+        },
+        {
+            "id":2,
+            "name":"Mr.XYZ",
+            "designation":"HOD,EEE Department",
+            "spl":"Data Science, AI, Machine Learning",
+            "desc":"Specialised in Neural Networks and NLP,Published works on Malayalam Handwritten character recognition using CNN,  Worked on Hidden encryption of text files",
+            "email":"http://www.email.com",
+            "linkedin": "https://www.linkedin.com",
+            "photo":"person.jpg"
+        },
+        {
+            "id":4,
+            "name":"Prof.MNO",
+            "designation":"EC Department",
+            "spl":"Data Science, AI, Machine Learning",
+            "desc":"Specialised in Neural Networks and NLP,Published works on Malayalam Handwritten character recognition using CNN,  Worked on Hidden encryption of text files",
+            "email":"http://www.email.com",
+            "linkedin": "https://www.linkedin.com",
+            "photo":"person.jpg"
+        }
+    ]
+}

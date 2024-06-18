@@ -1,8 +1,8 @@
-.card {
+.mcard {
     /* Sizing */
     height: 100%;
     width: 100%;
-    
+    display: flex;
     transform-style: preserve-3d;
   
     /* Content Alignment */
@@ -11,14 +11,14 @@
     /* Styling */
     border-radius: 5px;
     border: 5px solid #5E1675;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    
   
     user-select: none;
     cursor: pointer;
   }
   
-  .card-front,
-  .card-back {
+  .mcard-front,
+  .mcard-back {
     /* Sizing */
     height: 100%;
     width: 100%;
@@ -35,27 +35,44 @@
     align-items: center;
   
     /* Content Styling */
-    font-family: Montserrat;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 30px;
     color: white;
     //text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
   }
   
-  .card-front {
+  .mcard-front {
     background-color: white;
     font-size: large;
-    color: #5E1675;
+    color: #000000;
     text-align: center;
   }
+  .mcard-front h3{
+    font-size: 30px;
+  }
   
-  .card-back {
+  .mcard-back {
     background-color:#5E1675;
     transform: rotateY(180deg);
     border-color: white;
     text-align: center;
     
   }
-  .desc{
-    font-size: large;
+  .mcard .desc{
+    font-size: 20px;
   }
+.mcard-front  .email{
+       width:60px;
+       height:30px;
+       margin-bottom:5%;
+  }
+ .mcard-front .link{
+    width:60px;
+    height:30px;
+    margin-bottom:5%;
+ } 
+ .person{
+  width: 200px;
+  height: 160px;
+ }
