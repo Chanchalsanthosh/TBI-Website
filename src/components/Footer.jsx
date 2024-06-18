@@ -14,9 +14,15 @@ function Footer() {
     const ref= collection(firestore,"Subscribers");
     const handleSubmit= async(e)=>{
         e.preventDefault();
+        const currentDate=new Date()
         let data={
             name:nameRef.current.value,
             email:mailRef.current.value,
+            month:currentDate.getMonth()+1,
+            year:currentDate.getFullYear(),
+            day:currentDate.getDate(),
+
+            
         }
         try{
             addDoc(ref,data);
@@ -35,15 +41,18 @@ function Footer() {
         <FontAwesomeIcon icon={faPhone} className='phone'/> <p className='num'>98763547236</p>
         <FontAwesomeIcon icon={faEnvelope} className='email'/><p className='em'>tbi@gectcr.ac.in</p>
         <h3>follow us</h3>
+        <div className='icons'>
         <a href='https://www.linkedin.com/school/gectcr/?originalSubdomain=in' target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} className='link'/>
         </a>
         <a href='https://www.facebook.com/gectthrissur/' target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} className='fb'/>
         </a>
+        
         <a href='https://twitter.com/i/flow/login?redirect_after_login=%2Fgectcr' target="_blank" rel="noopener noreferrer">
         <img src='./img2.jpg' alt="" className='image'></img>
         </a>
+        </div>
         <img src='./logo.jpg' alt="" className='image1'></img>
       </div>
 

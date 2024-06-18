@@ -16,8 +16,7 @@ function UserEvents() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
   const [pastEvents, setPastEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const[selectedEvent1,setSelectedEvent1]=useState("");
-  const[initialEvent,setInitialEvent]=useState('')
+ 
   //const timestamp = eventData.Date.toDate();
 
 
@@ -40,7 +39,7 @@ function UserEvents() {
         });
         setPastEvents(pasEvents);
         setUpcomingEvents(upEvents);
-       setSelectedEvent(upEvents[0]);
+       setSelectedEvent(upEvents[0]||pasEvents[0]);
         //setSelectedEvent1(pasEvents[0]);
       } catch (error) {
         console.error(error);
@@ -84,7 +83,7 @@ function UserEvents() {
   const handleClick2= (id) => {
     pastEvents.map((eve) => {
       if (eve.id === id) {
-        setSelectedEvent1(eve);
+        setSelectedEvent(eve);
       }
     });
   };
@@ -175,29 +174,7 @@ function UserEvents() {
         )}
       </div>
 
-      <div className="event-detailspast">
-        {selectedEvent1 && (
-          
-            
-            <div className='DetailsTitle'>
-            <div className='side'>
-              {selectedEvent1.imglink && <img src={selectedEvent1.imglink} alt="Event" />}
-              </div>
-              <h1>Event Name: {selectedEvent1.Name}</h1>
-              <div className='undertop'>
-              <div className='under'>
-          <FontAwesomeIcon icon={faLocationDot} className='venue' /><h5>Venue:</h5> <p>{selectedEvent1.Venue}</p>
-          </div>
-        <div className='underS'><FontAwesomeIcon icon={faCalendarDays} className='dt' /><h5>Date & Time:</h5><p>{selectedEvent1.Date.toDate().toLocaleString()}</p></div> 
-        </div>
-              
-              <p>Description: {selectedEvent1.desc}</p>
-              {selectedEvent1.Reglink&&<h3><a href={selectedEvent1.Reglink}>Click here to register</a></h3>}
-            </div>
-          
-        )}
-      </div>
-     
+      
       </div>
 
        </div>

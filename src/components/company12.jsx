@@ -1,12 +1,28 @@
-import React from "react";
-import data from "../assests/dataimg.json";
-
+import React,{useState,useEffect}from "react";
+import {firestore} from './firebase';
+import {collection,getDocs} from '@firebase/firestore';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Company = () => {
- // const navigate = useNavigate();
+  const navigate = useNavigate();
+ const [companies,setCompanies]=useState([])
+ useEffect(() => {
+  const fetchData = async () => {
+    const ref = collection(firestore,'Companies');
+    try {
+      const querySnapshot = await getDocs(ref);
+      const newData = querySnapshot.docs.map(doc => doc.data());
+      //const sortedData = newData.sort((a,b) => b.id - a.id);
+      setCompanies(newData);
+      console.log(companies)
+    } catch (error) {
+      console.error('Error fetching documents: ', error);
+    }
+  };
+  fetchData()
+}, []);
   const settings = {
     dots: true,
     infinite: true,
@@ -31,17 +47,17 @@ const Company = () => {
         <div className="slider-container">
       <Slider {...settings}>
        
-        {data.Image.map((i) => (
+        {companies.map((i) => (
               <div key={i.id} className="own_card">
                 <div class="left">
-               <img src={i.name} alt={"i.name"} />
+               {i.img && <img src={i.img} alt={"i.name"} />}
                 </div>
               
                <div className="ccontent">
                 <h2>{i.cname}</h2>
-                <p>{i.about}</p>
+                <p>{i.cdesc.substring(0,100)}</p>
                 <div class="buttons">
-                <a href={i.url}>
+                <a href={i.link}>
                   <button>Visit Us</button>
                 </a>
                 <a href={"/company2"}>

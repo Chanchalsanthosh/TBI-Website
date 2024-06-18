@@ -1,6 +1,5 @@
 import React from 'react';
-import bg1 from "../assests/bg1.png";
-import bg2 from "../assests/bg2.png";
+
 import { useNavigate } from "react-router-dom";
 
 
@@ -8,9 +7,66 @@ import { useNavigate } from "react-router-dom";
 function Features() {
   const navigate = useNavigate();
   
-  return (
+ return (
     
-      <div id="features">
+  <div id="features">
+  
+  <div className="left-section">
+    <div className="card1">
+      <img src="logo1.jpeg" alt="" className="logo"></img>
+      <h1>Startup School</h1>
+      <p className="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      <button onClick={()=> {navigate("/startup")}}>Explore</button>
+     </div> 
+    </div> 
+  
+
+  <div className="right-section">
+    <div className="card2">
+      <img src="logo1.jpeg" alt="" className="logo"></img>
+      <h1>Mentor Network</h1>
+      <p className="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      <button onClick={()=> {navigate("/mentor")}} >Explore</button>
+     </div> 
+  </div>
+  
+  </div>
+  
+
+      
+     
+    
+  )
+}
+/*return (
+    
+      
+
+  <div id="features">
+  
+  <div className="left-section">
+    <div className="card">
+      <img src="logo1.jpeg" alt="" className="logo"></img>
+      <h1>Startup School</h1>
+      <p className="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      <button onClick={()=> {navigate("/startup")}}>Explore</button>
+     </div> 
+    </div> 
+  
+
+  <div className="right-section">
+    <div className="card2">
+      <img src="logo1.jpeg" alt="" className="logo"></img>
+      <h1>Mentor Network</h1>
+      <p className="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      <button onClick={()=> {navigate("/mentor")}} >Explore</button>
+     </div> 
+  </div>
+  
+  </div>
+  
+
+   <div id="features">
         <div className='heading'>
        <h1>Features</h1>
         </div>
@@ -35,9 +91,12 @@ function Features() {
 
       
       </div>
-    
-  )
-}
 
+  
+ 
+
+)
+}
+*/
 export default Features
 

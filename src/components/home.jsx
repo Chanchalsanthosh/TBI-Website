@@ -1,7 +1,10 @@
-import React from 'react'
-import bgvideo from "../assests/bgvideo.mp4"
+import React from 'react';
+import bgvideo from "../assests/bgvideo.mp4";
 
-const home = () => {
+
+
+const Home = () => {
+ 
   return (
     <div className='main'>
         <video src={bgvideo} autoPlay  loop muted ></video>
@@ -10,4 +13,4 @@ const home = () => {
   )
 }
 
-export default home;
+export default Home;
